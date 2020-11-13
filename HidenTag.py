@@ -11,7 +11,7 @@ class HidenTagMod(loader.Module):
     async def tagcmd(self, message):
         """Использование: .tag <@> <текст (по желанию)>."""
         args = utils.get_args_raw(message).split(' ')
-        tag = '\n'
+        tag = ' '
         try:
             user = await message.client.get_entity(args[0])
         except:
